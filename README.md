@@ -9,3 +9,7 @@ This is expected to be placed in your website's files in the public section with
 Next, you must add your web path of that file, to your GitHub webhook section. The final result should look like mine and fit your preferences.
 ![image](https://github.com/user-attachments/assets/0c7b8092-55cc-4800-abd7-e0793396b95e)
 Backup Image: https://i.imgur.com/6bk6Ger.png
+
+# The PHP output
+![image](https://github.com/user-attachments/assets/6fbe4b25-abb5-4252-9631-7c6f6f3e34a0)
+Backup Image: https://i.imgur.com/6kjfOOP.png
