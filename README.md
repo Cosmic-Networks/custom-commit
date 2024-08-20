@@ -12,4 +12,5 @@ Backup Image: https://i.imgur.com/6bk6Ger.png
 
 # The PHP output
 ![image](https://github.com/user-attachments/assets/6fbe4b25-abb5-4252-9631-7c6f6f3e34a0)
+
 Backup Image: https://i.imgur.com/6kjfOOP.png
