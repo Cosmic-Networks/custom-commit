@@ -11,6 +11,7 @@ This was made for commits made from the GitHub Desktop, to be embedded into a di
 - Ability to mark commits as private/hidden.
 - / No idea what PHP version this works on but it works for me (shrug).
 - / No support and never will. (Feel free to utilize Issues/Request and I may look at it).
+- / Known Security Issue: Anyone who finds out this web path can commit anything to that channel, use at your own risk.
 
 Host this file for free xia XAMPP in the `htdocs` folder
 # License TLDR
