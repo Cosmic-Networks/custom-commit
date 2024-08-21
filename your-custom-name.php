@@ -3,10 +3,13 @@
 # Config
 #####################################################################
 $webhookurl = "YOU-WEBHOOK-HERE";
+$nitroWebhookUrl = "YOU-WEBHOOK-HERE"; // Nitro webhook URL
+$enabledNitroCommits = true;  // Enable or disable Nitro commits
+$nitroBranch = 'dev';  // Your development branch name if you have one
 $hiddenMessage = "This change has been marked as private.";
 $reactions = ['🔥', '🎉', '🚀', '❤', '😩', '👌', '😚', '🤔', '👀'];
 $thumbnailUrl = "YOUR-PNG-IMAGE-HERE";
-$spaceGap = "‎";  // Invisible character used for spacing // not sure if this works but too lazy to check.
+$spaceGap = "‎";  // Invisible character used for spacing
 $privateCommitMarker = ";";  // Marker to identify private commits
 $commitUrlLength = 7;  // Default length of the commit ID to display
 
@@ -35,7 +38,7 @@ function getRandomReaction($reactions) {
 
 function getFormattedBranch($repo, $branch) {
     switch ($branch) {
-        case 'dev':
+        case $GLOBALS['nitroBranch']:
             return "$repo - (Development) ";
         case 'main':
             return "$repo - (Public) ";
@@ -56,6 +59,11 @@ if (empty($data->commits)) {
 $repo = $data->repository->name;
 $repourl = $data->repository->html_url;
 $branch = basename($data->ref);
+
+// Determine which webhook URL to use
+if ($enabledNitroCommits && $branch === $nitroBranch) {
+    $webhookurl = $nitroWebhookUrl;
+}
 
 $authorName = $data->sender->login;
 $authorAvatar = $data->sender->avatar_url;
