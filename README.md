@@ -6,7 +6,8 @@ This was made for commits made from the GitHub Desktop, to be embedded into a di
 ![image](https://github.com/user-attachments/assets/e079c449-8934-4cf5-a56e-64a23ab8e82c)
 
 - Support for adding cute emojis to your title.
-- Support for brand logo embed
+- Support for brand logo embed.
+- Support for sending development commits to a different webhook. You can use this for nitro support to see early access development.
 - Increased character size embed to 2000.
 - Ability to mark commits as private/hidden.
 - / No idea what PHP version this works on but it works for me (shrug).
